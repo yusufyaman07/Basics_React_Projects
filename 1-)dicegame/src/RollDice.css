@@ -1,0 +1,43 @@
+.dices-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.dices {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.rolling {
+  animation: roll 0.5s ease-in-out;
+}
+button {
+  border: 0;
+  outline: 0;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: brown;
+  color: white;
+}
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: brown;
+}
